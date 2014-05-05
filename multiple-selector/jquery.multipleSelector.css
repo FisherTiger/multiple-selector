@@ -1,0 +1,41 @@
+﻿
+*[data-role='multiple-selector']{
+    white-space:nowrap;
+    display:inline-block;
+}
+*[data-role='multiple-selector'] div[data-role='multiple-selector-header'] input[data-role='multiple-selector-input']{
+    width:100%;
+    border:1px solid deepskyblue;
+    box-sizing:border-box;
+    padding:1px 3px;
+}
+*[data-role='multiple-selector'] div[data-role='multiple-selector-header'] select[data-role='multiple-selector-select']{
+    width:100%;
+    box-sizing:border-box;
+}
+*[data-role='multiple-selector'] div[data-role='multiple-selector-items-container']{
+    position:absolute;
+    max-width:400px;
+    max-height:400px;
+    background-color:white;
+    overflow-x:hidden; overflow-y: auto;
+    border:2px solid black;
+    z-index:1;
+    display:none;
+}
+*[data-role='multiple-selector'] div[data-role='multiple-selector-items-container'] label[data-role='multiple-selector-item']{
+    display:block;
+}
+*[data-role='multiple-selector'] div[data-role='multiple-selector-items-container'] label[data-role='multiple-selector-message']{
+    /*color:red;*/
+    font-size:smaller;
+    font-style:italic;
+    display:block;
+}
+*[data-role='multiple-selector'] div[data-role='multiple-selector-items-container'] label:hover{
+    background-color:#dedede;
+}
+*[data-role='multiple-selector'] div[data-role='multiple-selector-items-container'] label span
+{
+    vertical-align:text-top;
+}
